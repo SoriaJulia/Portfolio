@@ -38,6 +38,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	z-index: 1; /* necesario para que el background quede atraz */
 }
 
 /* typography */
@@ -74,16 +75,20 @@ p{
 
 
 body {
-	background-color: var(--Primary-dark-50);
+	background-color: var(--Primary-dark-70);
 	color: var(--Primary-light-70);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	min-height: 100vh;
-	background-image: url("../assets/img/background.png");
-	background-blend-mode: soft-light;
-	background-size: cover;
 }
+.background {
+  	position:absolute;	  
+	display:block;	  
+	top:0;	  
+	left:0;	  
+	z-index:0;
+	}
 
 /* scrollbar */
 ::-webkit-scrollbar {
@@ -109,7 +114,8 @@ body {
 /* nav */
 header {
 	position: sticky;
-	background-color: var(--Primary);
+	background: rgb(19,15,87);
+	background: linear-gradient(180deg, rgba(19,15,87,1) 0%, rgba(17,14,78,1) 50%, rgba(13,11,61,1) 100%);
 	top: 0;
 	padding: 16PX 36PX;
 	text-align: center;
@@ -159,7 +165,8 @@ nav ul li{
 
 /* footer*/
 footer{
-	background-color:var(--Primary-dark-30);
+	background: rgb(11,9,52);
+	background: linear-gradient(8deg, rgba(11,9,52,1) 0%, rgba(6,5,26,1) 100%);
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-areas:
@@ -308,6 +315,7 @@ footer{
 	gap: 1rem;
 	margin: 1.2rem 0;
 	justify-content: center;
+	
 }
 #presentation #navigation {
 	grid-area: navigation;
@@ -326,6 +334,7 @@ footer{
 #presentation h1{
 	text-align: center;
 }
+
 .presentation_links{
 	grid-area: links;
 	display: flex;
