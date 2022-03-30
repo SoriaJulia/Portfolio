@@ -43,7 +43,6 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	/* z-index: 0; */ /* necesario para que el background quede atraz */
 }
 
 /* typography */
@@ -83,6 +82,7 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 	background-color: var(--Primary-dark-70);
 	color: var(--Primary-light-70);
+	min-height: 100vh;
 }
 .background {
   	position: absolute;
