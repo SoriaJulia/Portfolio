@@ -5,48 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://kit.fontawesome.com/a6222bfc51.js" crossorigin="anonymous"></script>
     <title>Portfolio - Julia Soledad Soria</title>
 </head>
 <body>
     <header>
-		<nav>
-			<ul>
-				<li class="nav_logo">
-					<a href="index.html"><img  src="assets/img/cara.png" alt="profile image"></a>
-					<a href="index.html">Julia Soria</a>
-				</li>
-                <div>
-                    <li class="nav_item"><a href="pages/about.html">Sobre mi</a></li>
-                    <li class="nav_item"><a href="pages/resume.html">Currículum</a></li>
-                    <li class="nav_item"><a href="pages/projects.html">Proyectos</a></li>
-                    <li class="nav_item"><a href="pages/contact.html">Contacto</a></li>
-                </div>
-			</ul>
-		</nav>
-	</header>
-    	<section id="presentation">
-		<img src="assets/img/lofi.png">
-		<article>
-            <h1>¡Hola! </h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur voluptates necessitatibus, rerum nesciunt nam, reiciendis, distinctio ipsa exercitationem, id rem consequuntur saepe temporibus enim qui. Excepturi distinctio officia autem qui.</p>
-            <div class="presentation_links">
-                <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
-                <a href=""><i class="fa-brands fa-behance-square fa-2x"></i></a>
-                <a href=""><i class="fa-brands fa-github-square fa-2x"></i></a>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <button class="navbar-toggler color-accent2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand color-accent2" href="index.html">
+                <img  src="assets/img/cara.png" alt="profile image" width="50" height="auto"  class="d-inline-block align-text-center">
+                    Julia Soria
+            </a>
+              <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link color-accent2" href="pages/about.html">Sobre mi</a></li>
+                    <li class="nav-item"><a class="nav-link color-accent2" href="pages/resume.html">Currículum</a></li>
+                    <li class="nav-item"><a class="nav-link color-accent2" href="pages/projects.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link color-accent2" href="pages/contact.html">Contacto</a></li>
+                </ul>
+              </div>
             </div>
-		</article> 
-        <div id="navigation">
+          </nav>
+    </header>
+
+    <div class="container-md mt-lg-5 mt-3">
+        <section class="row align-items-center" id="presentation">
+            <div class="col-4 d-none d-lg-flex align-items-center mx-4">
+                <img src="assets/img/lofi.png" class="ratio ratio-1x1 ">
+            </div>  
+            <article class="col-12 col-lg-7 ">
+                <h1 class="text-center text-lg-start">¡Hola! </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur voluptates necessitatibus, rerum nesciunt nam, reiciendis, distinctio ipsa exercitationem, id rem consequuntur saepe temporibus enim qui. Excepturi distinctio officia autem qui.</p>
+                <div class="presentation_links text-center">
+                    <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    <a href=""><i class="fa-brands fa-behance-square fa-2x"></i></a>
+                    <a href=""><i class="fa-brands fa-github-square fa-2x"></i></a>
+                </div>
+            </article> 
+            
+        </section>
+        <div class="row d-lg-none" id="navigation">
             <button class="button btnSecondary btnLarge" href="pages/about.html">Sobre mi</button>
             <button class="button btnSecondary btnLarge" href="pages/resume.html">Currículum</button>
             <button class="button btnSecondary btnLarge" href="pages/projects.html">Proyectos</button>
             <button class="button btnSecondary btnLarge" href="pages/contact.html">Contacto</button>
         </div>
-        
-	</section>
+    </div>
     
-	<footer>
+	<footer class="fixed-bottom">
         <div id="footerSocial">
             <h5>Seguí mi trabajo</h5>
             <a href=""><i class="fa-brands fa-linkedin fa-lg"></i>Linkedin</a>
@@ -63,6 +74,7 @@
     
     <canvas class="background"></canvas>
     <script src="js/particles.js/dist/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
