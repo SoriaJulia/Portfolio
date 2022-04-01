@@ -45,38 +45,6 @@
 	box-sizing: border-box;
 }
 
-/* typography */
-h1{
-	font-size: 4rem;
-	font-weight: 200;
-	letter-spacing: -0.1rem;
-}
-h2{
-	font-size: 2.2rem;
-	font-weight: 400;
-}
-h3{
-	font-size: 2rem;
-	font-weight: 300;
-}
-h4{
-	font-size: 1.6rem;
-	font-weight: 400;
-}
-h5{
-	font-size: 1.3rem;
-	font-weight: 600;
-}
-h6{
-	font-size: 1.3rem;
-	font-weight: 200;
-}
-p{
-	font-size: 1.2rem;
-	line-height: 1.2em;
-}
-/* typography */
-
 
 body {
 	font-family: 'Josefin Sans', sans-serif;
@@ -129,23 +97,8 @@ header {
 footer{
 	background: rgb(11,9,52);
 	background: linear-gradient(8deg, rgba(11,9,52,1) 0%, rgba(6,5,26,1) 100%);
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-areas:
-		"contact social";
-	padding: 1em 2rem;
-	gap: 8px;
 }
-#footerContact{
-	grid-area: contact;
-	display: flex;
-	flex-direction: column;
-}
-#footerSocial{
-	grid-area: social;
-	display: flex;
-	flex-direction: column;
-}
+
 	footer h5{
 		text-align: center;
 		font-weight: 100;
@@ -156,31 +109,11 @@ footer{
 		color:var(--Primary-light-70);
 		font-size: 1.2rem;
 		font-weight: 300;
-		text-align: center;
-		margin: 8px;
 		transition: color 200ms ;
 	}
 		footer a:hover, footer a:focus{
 			color:var(--Primary-light-90);
 		}
-		footer a svg{
-			margin-right: 0.5rem; 
-		}
-@media screen and (min-width:1080px) {
-	#footerSocial{
-		flex-direction: row;
-		align-items: center;
-		width: fit-content;
-		justify-content: flex-end;
-		width: 100%;
-	}
-	#footerContact{
-		flex-direction: row;
-		align-items: center;
-		width: fit-content;
-	}
-
-}
 
 /* footer*/
 
@@ -303,9 +236,6 @@ footer{
 	background: #23696f87;
 	box-shadow: 0 0.125rem 0.25rem 1px rgb(126 170 177 / 17%);
 }
-	.experience h2 small{
-		font-weight: 200;
-	}
 	.experience .list-group-item{
 		background: #23696f87;
 		color: var(--Primary-light-90);
