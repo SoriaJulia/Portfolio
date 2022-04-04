@@ -1,0 +1,40 @@
+#resumeTab button{
+	font-size: 1.2rem;
+	color: $Accent2-light-80;
+    &.active{
+        color: $Accent1-dark-30;
+        font-weight: 600;
+        background-color: $Primary-light-70;
+    }
+}
+
+/*Experiences*/
+
+.experience{
+	background: #23696f87;
+	box-shadow: 0 0.125rem 0.25rem 1px rgba(126, 170, 177, 0.17);
+	.list-group-item{
+		background: #23696f87;
+		color: $Primary-light-90;
+	}
+	.card-header{
+		background: #b0dfe3ad;
+		color: $Primary-dark-30;
+	}
+}
+
+/*Experiences*/
+
+/*Studies*/
+
+.study{
+	background: #f0779b66;
+	color: $Primary-light-90;
+}
+@media screen and (min-width:850px) {
+	.studies{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+/*Studies*/

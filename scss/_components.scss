@@ -1,0 +1,51 @@
+/*button*/
+.btnPrimary{
+	background-color: $Accent1-light-10;
+	color: $Primary-dark-10;
+	border: solid 2px $Accent1-light-10;
+	transition: all 300ms cubic-bezier(.05,.52,.83,.67);
+	&:hover, &:focus{
+		background-color: $Accent1-dark-30;
+		color: $Primary-dark-30;
+	}
+}
+
+.btnSecondary{
+	background: none;
+	color:$Accent1-light-10;
+	border: solid 2px $Accent1-light-10;
+	transition: all 300ms cubic-bezier(.05,.52,.83,.67);
+	&:hover, &:focus{
+		color: $Primary;
+		border-color: $Accent1-dark-10;
+		background: $Accent1;
+	}
+}
+/*button*/
+
+/*Progress bar*/
+.bar{
+	width: 95%;
+	height: 16px;
+	background: rgba(255, 255, 255, 0.658);
+	border-radius: 20px;
+}
+.progress{
+	width: 100%;
+	height: 16px;
+	background: rgba(195, 36, 115, 0.7);
+	border-radius: 20px;
+	&.p50{
+		width: 50%;
+	}
+	&.p60{
+		width: 60%;
+	}
+	&.p70{
+		width: 70%;
+	}
+	&.p80{
+		width: 80%;
+	}
+}
+/*Progress bar*/

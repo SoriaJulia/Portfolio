@@ -1,0 +1,23 @@
+/*form*/
+
+.form-control{
+	border-radius: 2px;
+	background-color: #b0dfe3b6;
+	border: solid 3px $Accent2-dark-10;
+    &::-moz-placeholder {
+        color: $Accent2-dark-60;
+        opacity: 1;
+    }
+    &::placeholder {
+        color: $Accent2-dark-70;
+        opacity: 1;
+    }
+    &:focus{
+        background-color: $Accent2-light-60;
+    }
+}
+
+form .botones{
+	text-align: end;
+}
+/*form*/

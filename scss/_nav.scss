@@ -1,0 +1,11 @@
+/* nav */
+header {
+	background: rgb(19,15,87);
+	background: linear-gradient(180deg, rgba(19,15,87,1) 0%, rgba(17,14,78,1) 50%, rgba(13,11,61,1) 100%);
+	z-index: 1;
+}
+ .navbar-collapse{
+	 flex-grow: inherit;
+	 font-size: 1.3rem;
+}
+/* nav */

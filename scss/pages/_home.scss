@@ -1,0 +1,20 @@
+.background {
+    position: absolute;
+    display:block;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+
+/* presentation */
+.presentation_links a{
+    margin: 0 1rem;
+    border-radius: 8px;
+    color: #647AA6;
+    transition: color 300ms;
+    &:hover, &:focus{
+        color: #E773AD;
+    }
+}
+/*presentation*/
