@@ -96,7 +96,7 @@ header {
 /* footer*/
 footer{
 	background: rgb(11,9,52);
-	background: linear-gradient(8deg, rgba(11,9,52,1) 0%, rgba(6,5,26,1) 100%);
+	background: linear-gradient(187deg, #0b0934 0%, #06051a 100%);
 }
 
 	footer h5{
