@@ -1,0 +1,23 @@
+/* footer*/
+footer{
+	background: rgb(11,9,52);
+	background: linear-gradient(187deg, #0b0934 0%, #06051a 100%);
+    h5{
+        text-align: center;
+        font-weight: 100;
+        color: $Primary-light-70;
+    }
+    a {
+        text-decoration: none;
+        color:$Primary-light-70;
+        font-size: 1.2rem;
+        font-weight: 300;
+        transition: color 200ms ;
+    }
+        &:hover, &:focus{
+            color:$Primary-light-90;
+        }
+}
+
+
+/* footer*/

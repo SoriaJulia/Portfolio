@@ -1,0 +1,40 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: $Primary-dark-70;
+	color: $Primary-light-70;
+	min-height: 100vh;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+	width: 0.7rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+	background-color: #9fbed63f;
+	border-radius: 2px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+	background: #17235F; 
+	border-radius: 2px;
+    &:hover {
+      background: #647AA6; 
+    }
+  }
+  
+
+/* scrollbar */
+
+.color-accent2{
+	color: $Accent2;
+    &:hover{
+        color:$Accent2-light-20;
+    }
+}
