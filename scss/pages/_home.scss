@@ -11,10 +11,10 @@
 .presentation_links a{
     margin: 0 1rem;
     border-radius: 8px;
-    color: #647AA6;
+    color: $Accent2-light-10;
     transition: color 300ms;
     &:hover, &:focus{
-        color: #E773AD;
+        color: $Accent2-dark-10;
     }
 }
 /*presentation*/

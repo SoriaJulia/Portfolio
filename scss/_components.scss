@@ -24,6 +24,7 @@
 /*button*/
 
 /*Progress bar*/
+
 .bar{
 	width: 95%;
 	height: 16px;
@@ -35,17 +36,10 @@
 	height: 16px;
 	background: rgba(195, 36, 115, 0.7);
 	border-radius: 20px;
-	&.p50{
-		width: 50%;
-	}
-	&.p60{
-		width: 60%;
-	}
-	&.p70{
-		width: 70%;
-	}
-	&.p80{
-		width: 80%;
+	@each $key, $value in $percents{
+		&.percent-#{$key}{
+			width: $value;
+		}
 	}
 }
 /*Progress bar*/

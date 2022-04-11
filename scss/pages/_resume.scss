@@ -3,7 +3,7 @@
 	color: $Accent2-light-80;
     &.active{
         color: $Accent1-dark-30;
-        font-weight: 600;
+        font-weight: map-get($fontWeight,"bold");
         background-color: $Primary-light-70;
     }
 }
