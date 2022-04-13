@@ -60,24 +60,21 @@ footer {
 
 /* footer*/
 /*button*/
-.btnPrimary {
-  background-color: #ec5080;
-  color: #110e4e;
-  border: solid 2px #ec5080;
-  transition: all 300ms cubic-bezier(0.05, 0.52, 0.83, 0.67); }
-  .btnPrimary:hover, .btnPrimary:focus {
+.btn, .btnSecondary {
+  border-width: 2px;
+  border-color: #ec5080;
+  transition: all 300ms cubic-bezier(0.05, 0.52, 0.83, 0.67);
+  background: none;
+  color: #ec5080; }
+  .btn:hover, .btnSecondary:hover, .btn:focus, .btnSecondary:focus {
     background-color: #a42b50;
     color: #0d0b3d; }
 
 .btnSecondary {
-  background: none;
-  color: #ec5080;
-  border: solid 2px #ec5080;
-  transition: all 300ms cubic-bezier(0.05, 0.52, 0.83, 0.67); }
+  color: #349ea7;
+  border-color: #4eb7c0; }
   .btnSecondary:hover, .btnSecondary:focus {
-    color: #130f57;
-    border-color: #d33767;
-    background: #ea3d72; }
+    background-color: #297a82; }
 
 /*button*/
 /*Progress bar*/
@@ -92,14 +89,18 @@ footer {
   height: 16px;
   background: rgba(195, 36, 115, 0.7);
   border-radius: 20px; }
-  .progress.p50 {
+  .progress.percent-40 {
+    width: 40%; }
+  .progress.percent-50 {
     width: 50%; }
-  .progress.p60 {
+  .progress.percent-60 {
     width: 60%; }
-  .progress.p70 {
+  .progress.percent-70 {
     width: 70%; }
-  .progress.p80 {
+  .progress.percent-80 {
     width: 80%; }
+  .progress.percent-90 {
+    width: 90%; }
 
 /*Progress bar*/
 .background {
@@ -113,10 +114,10 @@ footer {
 .presentation_links a {
   margin: 0 1rem;
   border-radius: 8px;
-  color: #647AA6;
+  color: #4eb7c0;
   transition: color 300ms; }
   .presentation_links a:hover, .presentation_links a:focus {
-    color: #E773AD; }
+    color: #349ea7; }
 
 /*presentation*/
 .about article {
