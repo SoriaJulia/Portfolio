@@ -11,6 +11,7 @@
 	<title>Contacto - Julia Soria</title>
 	<meta name="description" content="Formulario de contacto para que puedas dejarme tus consultas">
 	<meta name="keywords" content="contacto, email">
+
 </head>
 <body class="d-flex flex-column justify-content-between">
 	<header>
@@ -42,45 +43,77 @@
 			</div>
 			<article class="col">
 				<h1 class="my-2 display-2">Contactame</h1>
-				<form action="#">
+				<form id="contactForm" action="javascript:SubForm()" autocomplete="off">
 					<div class="mb-2">
 						<label for="name" class="form-label">Nombre</label>
-						<input type="text" id="name" class="form-control" placeholder="Martina">
+						<input type="text" id="name" name="name" class="form-control" placeholder="Martina" required>
 					</div>
 					<div class="mb-2">
 						<label for="email" class="form-label">Email</label>
-						<input type="email" id="email" class="form-control" placeholder="martina@example.com">		
+						<input type="email" id="email" name="email" class="form-control" placeholder="martina@example.com" required>		
 					</div>
 					<div>
 						<label for="message" class="form-label">Mensaje</label>
-						<textarea class="form-control" id="message" rows="3" placeholder="Dejá tu mensaje acá..."></textarea>
+						<textarea class="form-control" name="message" id="message" rows="3" placeholder="Dejá tu mensaje acá..." required></textarea>
 					</div>
 					<div class=" gap-2 d-flex justify-content-end mt-3">
 						<input class="btn btnSecondary" type="reset" value="Cancelar">
-						<input class="btn" type="submit" value="Enviar">
+						<button class="btn">
+							<span class="spinner-border spinner-border-sm d-none" id="sendSpinner" role="status" aria-hidden="true"></span>
+							<span id="sendLabel">Enviar</span>
+							<span id="sendingLabel" class="d-none">Enviando...</span>
+						</button>
 					</div>
 				</form>
 			</article>
 
 		</div>
 	</section>
+
 	<footer class="px-4 py-3 container-fluid">
         <div class="row">
             <div class="col d-flex flex-column flex-lg-row align-items-center">
                 <h5 class="me-2">Seguí mi trabajo</h5>
-                <a class="text-center mx-2" href=""><i class="fa-brands fa-linkedin fa-lg me-1"></i>Linkedin</a>
-                <a class="text-center mx-2" href=""><i class="fa-brands fa-behance fa-lg me-1"></i>Behance</a>
-                <a class="text-center mx-2" href=""><i class="fa-brands fa-github fa-lg me-1"></i>Github</a>
+                <a class="text-center mx-2" href="https://www.linkedin.com/in/julia-soria-568454110"><i class="fa-brands fa-linkedin fa-lg me-1"></i>Linkedin</a>
+                <a class="text-center mx-2" href="https://www.behance.net/julisoria"><i class="fa-brands fa-behance fa-lg me-1"></i>Behance</a>
+                <a class="text-center mx-2" href="https://github.com/SoriaJulia"><i class="fa-brands fa-github fa-lg me-1"></i>Github</a>
             </div>
             <div class="col d-flex flex-column flex-lg-row align-items-center justify-content-end ">
                 <h5 class="me-2">¡Hablemos!</h5>
-                <a class="text-center mx-2" href=""><i class="fa-solid fa-envelope fa-lg me-1"></i>Email</a>
-                <a class="text-center mx-2" href=""><i class="fa-brands fa-whatsapp fa-lg me-1"></i>WhatsApp</a>
-                <a class="text-center mx-2" href=""><i class="fa-brands fa-telegram fa-lg me-1"></i>Telegram</a>
+                <a class="text-center mx-2" href="mailto:soriajulias@gmail.com"><i class="fa-solid fa-envelope fa-lg me-1"></i>Email</a>
+                <a class="text-center mx-2" href="https://wa.me/+543364652500"><i class="fa-brands fa-whatsapp fa-lg me-1"></i>WhatsApp</a>
+                <a class="text-center mx-2" href="https://t.me/SoriaJulia"><i class="fa-brands fa-telegram fa-lg me-1"></i>Telegram</a>
             </div>
         </div>
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+	
+		function SubForm (){
+			const data = $("#contactForm").serializeArray();
+				$('#sendSpinner').removeClass('d-none');
+				$('#sendingLabel').removeClass('d-none');
+				$('#sendLabel').addClass('d-none');
+				$.ajax({
+					url:"https://api.apispreadsheets.com/data/LEv19WX0esaILn25/",
+					type:"post",
+					data:$("#contactForm").serializeArray(),
+					success: function(){
+						alert("¡Gracias! Pronto estaremos en contacto :)")
+						$('#contactForm').trigger("reset");
+					},
+					error: function(){
+						alert(":( ¡Algo salio mal! Por favor volve a intentarlo o contactame por otro medio.")
+					},
+					complete:()=>{
+						$('#sendSpinner').addClass('d-none');
+						$('#sendingLabel').addClass('d-none');
+						$('#sendLabel').removeClass('d-none');
+					}
+				});
+		}
+	</script>
 </body>
 </html>
