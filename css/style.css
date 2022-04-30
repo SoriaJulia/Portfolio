@@ -5,10 +5,26 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   background-color: #06051a;
   color: #b8b7cd;
   min-height: 100vh; }
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+.w-30 {
+  width: 30%; }
+
+.text-accent2-l10 {
+  color: #4eb7c0; }
+
+.text-accent1-l10 {
+  color: #f0779c; }
 
 /* scrollbar */
 ::-webkit-scrollbar {
@@ -19,14 +35,14 @@ body {
   border-radius: 2px; }
 
 ::-webkit-scrollbar-thumb {
-  background: #17235F;
+  background: #17235f;
   border-radius: 2px; }
   ::-webkit-scrollbar-thumb:hover {
-    background: #647AA6; }
+    background: #647aa6; }
 
 /* scrollbar */
 .color-accent2 {
-  color: #3AAFB9; }
+  color: #3aafb9; }
   .color-accent2:hover {
     color: #61bfc7; }
 
@@ -60,23 +76,46 @@ footer {
 
 /* footer*/
 /*button*/
-.btn, .btnSecondary {
+.btn, .btnTeal {
   border-width: 2px;
   border-color: #ec5080;
   transition: all 300ms cubic-bezier(0.05, 0.52, 0.83, 0.67);
   background: none;
-  color: #ec5080; }
-  .btn:hover, .btnSecondary:hover, .btn:focus, .btnSecondary:focus {
-    background-color: #a42b50;
-    color: #0d0b3d; }
+  color: #ec5080;
+  font-size: x-large; }
+  .btn:hover, .btnTeal:hover, .btn:focus, .btnTeal:focus {
+    color: #f0779c;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px #f0779c35; }
+  .btn:active, .btnTeal:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px #f0779c35; }
 
-.btnSecondary {
+.btnTeal {
   color: #349ea7;
   border-color: #4eb7c0; }
-  .btnSecondary:hover, .btnSecondary:focus {
-    background-color: #297a82; }
+  .btnTeal:hover, .btnTeal:focus {
+    color: #75c7ce;
+    box-shadow: 0 10px 20px #75c7ce35; }
+  .btnTeal:active {
+    box-shadow: 0 5px 10px #75c7ce35; }
 
 /*button*/
+/*Card Link*/
+.cardLink, .cardLinkTeal {
+  transition: all 300ms cubic-bezier(0.05, 0.52, 0.83, 0.67);
+  color: #ee648e;
+  font-size: 1.5rem;
+  font-weight: 300; }
+  .cardLink:hover, .cardLinkTeal:hover, .cardLink:focus, .cardLinkTeal:focus {
+    color: #f28baa; }
+
+.cardLinkTeal {
+  color: #4eb7c0; }
+  .cardLinkTeal:hover, .cardLinkTeal:focus {
+    color: #b0dfe3; }
+
+/*Card Link*/
 /*Progress bar*/
 .bar {
   width: 95%;
@@ -103,21 +142,20 @@ footer {
     width: 90%; }
 
 /*Progress bar*/
-.background {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: -1; }
-
 /* presentation */
 .presentation_links a {
   margin: 0 1rem;
   border-radius: 8px;
   color: #4eb7c0;
-  transition: color 300ms; }
-  .presentation_links a:hover, .presentation_links a:focus {
-    color: #349ea7; }
+  transition: all 200ms cubic-bezier(0.05, 0.52, 0.83, 0.67); }
+  .presentation_links a svg:hover,
+  .presentation_links a svg:focus {
+    color: #75c7ce;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px #75c7ce35; }
+  .presentation_links a svg:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px #75c7ce35; }
 
 /*presentation*/
 .about article {
@@ -136,7 +174,8 @@ footer {
     width: 45%; } }
 
 #resumeTab button {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 300;
   color: #d8eff1; }
   #resumeTab button.active {
     color: #a42b50;
@@ -157,8 +196,12 @@ footer {
 /*Experiences*/
 /*Studies*/
 .study {
-  background: #f0779b66;
-  color: #e7e7ee; }
+  background: #f0779b46;
+  color: #b8b7cd; }
+  .study .card-header {
+    font-weight: 300; }
+  .study .card-body {
+    font-size: 1.3rem; }
 
 @media screen and (min-width: 850px) {
   .studies {
@@ -167,10 +210,10 @@ footer {
 
 /*Studies*/
 .project {
-  background-color: #647aa69c;
+  background-color: #8987ab55;
   color: #e7e7ee; }
   .project h3 {
-    color: #3AAFB9; }
+    color: #3aafb9; }
   .project a {
     display: block; }
 
@@ -192,3 +235,13 @@ form .botones {
   text-align: end; }
 
 /*form*/
+.floating404 {
+  position: absolute;
+  z-index: -2;
+  color: #4eb7c0;
+  font-size: 35vw;
+  font-weight: 600;
+  line-height: 40vw;
+  opacity: 0.1;
+  top: 5%;
+  right: 2%; }
