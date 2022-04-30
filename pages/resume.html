@@ -1,295 +1,390 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="../assets/img/favicon.png">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" href="../css/style.css">
-	<script src="https://kit.fontawesome.com/a6222bfc51.js" crossorigin="anonymous"></script>
-	<title>Currículum - Julia Soria</title>
-	<meta name="description" content="Mis skills, experiencias y educación">
-	<meta name="keywords" content="css, figma, javascript, bootstrap, HTML">
-</head>
-<body class="d-flex flex-column justify-content-between">
-	<header>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-              <button class="navbar-toggler color-accent2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-              </button>
-              <a class="navbar-brand color-accent2" href="../index.html">
-                <img  src="../assets/img/cara.png" alt="profile image" width="50" height="auto"  class="d-inline-block align-text-center">
-                    Julia Soria
-            </a>
-              <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link color-accent2" href="../pages/about.html">Sobre mi</a></li>
-                    <li class="nav-item" aria-current="page"><a class="nav-link color-accent2" href="../pages/resume.html">Currículum</a></li>
-                    <li class="nav-item"><a class="nav-link color-accent2" href="../pages/projects.html">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link color-accent2" href="../pages/contact.html">Contacto</a></li>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../assets/img/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://kit.fontawesome.com/a6222bfc51.js" crossorigin="anonymous"></script>
+    <title>Currículum - Julia Soria</title>
+    <meta name="description" content="Mis skills, experiencias y educación" />
+    <meta name="keywords" content="css, figma, javascript, bootstrap, HTML" />
+  </head>
+  <body class="d-flex flex-column justify-content-between">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler color-accent2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand color-accent2" href="../index.html">
+            <img src="../assets/img/cara.png" alt="profile image" width="50" height="auto" class="d-inline-block align-text-center" />
+            Julia Soria
+          </a>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link color-accent2" href="../pages/about.html">Sobre mi</a>
+              </li>
+              <li class="nav-item" aria-current="page">
+                <a class="nav-link color-accent2" href="../pages/resume.html">Currículum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-accent2" href="../pages/projects.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-accent2" href="../pages/contact.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="flex-grow-1 container-lg mt-3 mt-lg-5">
+      <ul class="nav nav-tabs nav-fill" id="resumeTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="skills-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#skills"
+            type="button"
+            role="tab"
+            aria-controls="skills"
+            aria-selected="true"
+          >
+            Skills
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="experiences-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#experiences"
+            type="button"
+            role="tab"
+            aria-controls="experiences"
+            aria-selected="false"
+          >
+            Experiencia
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="studies-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#studies"
+            type="button"
+            role="tab"
+            aria-controls="studies"
+            aria-selected="false"
+          >
+            Educación
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content mt-5" id="resumeTabContent">
+        <div class="tab-pane fade show active" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+          <!-- contenido tab skills -->
+          <article class="row">
+            <div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
+              Figma
+              <div class="bar">
+                <div class="progress percent-70"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
+              Illustrator
+              <div class="bar">
+                <div class="progress percent-60"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
+              Photoshop
+              <div class="bar">
+                <div class="progress percent-50"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
+              Adobe XD
+              <div class="bar">
+                <div class="progress percent-60"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
+              CSS
+              <div class="bar">
+                <div class="progress percent-70"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
+              SASS
+              <div class="bar">
+                <div class="progress percent-40"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
+              Bootstrap
+              <div class="bar">
+                <div class="progress percent-60"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
+              HTML
+              <div class="bar">
+                <div class="progress percent-50"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
+              javascript
+              <div class="bar">
+                <div class="progress percent-80"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
+              .Net
+              <div class="bar">
+                <div class="progress percent-70"></div>
+              </div>
+            </div>
+          </article>
+          <!--end contenido tab skills -->
+        </div>
+        <div class="tab-pane fade" id="experiences" role="tabpanel" aria-labelledby="experiences-tab">
+          <!--contenido tab experiencia -->
+          <article>
+            <div class="card my-2 experience">
+              <div
+                class="card-header d-lg-flex flex-column"
+                data-bs-toggle="collapse"
+                href="#expWigou"
+                role="button"
+                aria-expanded="false"
+                aria-controls="expWigou"
+              >
+                <h1 class="d-flex justify-content-between">Wigou <small class="fw-light">01/2021-01/2022</small></h1>
+                <div class="d-flex justify-content-between align-items-end">
+                  <div class="d-flex align-items-center flex-wrap">
+                    <h3 class="mx-2">FullStack Developer</h3>
+                    <h4 class="mx-2">Gosu - AngularJs</h4>
+                  </div>
+                  <i class="fa-solid fa-chevron-down opacity-75"></i>
+                </div>
+              </div>
+              <div class="card-body collapse" id="expWigou">
+                <h4 class="mb-2">Proyecto: NetVos - La Segunda</h4>
+                <h5>Software y lenguajes utilizados</h5>
+                <ul class="list-group mb-2">
+                  <li class="list-group-item">AngularJS</li>
+                  <li class="list-group-item">SASS</li>
+                  <li class="list-group-item">Gosu</li>
+                  <li class="list-group-item">Guidewire</li>
+                  <li class="list-group-item">Postman</li>
+                  <li class="list-group-item">Bitbucket</li>
+                  <li class="list-group-item">Jira</li>
+                </ul>
+                <h5>Tareas realizadas</h5>
+                <ul class="list-group">
+                  <li class="list-group-item">Diseño e implementación de interfaces responsivas</li>
+                  <li class="list-group-item">Creación y mantenimiento de APIs</li>
+                  <li class="list-group-item">Creación y mantenimiento de documentación</li>
+                  <li class="list-group-item">Participación activa en la metodologia de trabajo Agil (scrum)</li>
                 </ul>
               </div>
             </div>
-          </nav>
-    </header>
-	<section class="flex-grow-1 container-lg mt-3 mt-lg-5">
-		<ul class="nav nav-tabs nav-fill" id="resumeTab" role="tablist">
-			<li class="nav-item" role="presentation">
-				<button class="nav-link active" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills" type="button" role="tab" aria-controls="skills" aria-selected="true">Skills</button>
-			</li>
-			<li class="nav-item" role="presentation">
-				<button class="nav-link" id="experiences-tab" data-bs-toggle="tab" data-bs-target="#experiences" type="button" role="tab" aria-controls="experiences" aria-selected="false">Experiencia</button>
-			</li>
-			<li class="nav-item" role="presentation">
-				<button class="nav-link" id="studies-tab" data-bs-toggle="tab" data-bs-target="#studies" type="button" role="tab" aria-controls="studies" aria-selected="false">Educación</button>
-			</li>
-		</ul>
-		<div class="tab-content mt-5" id="resumeTabContent">
-			<div class="tab-pane fade show active" id="skills" role="tabpanel" aria-labelledby="skills-tab">
-				<!-- contenido tab skills -->
-				<article class="row">	
-					<div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
-						Figma
-							<div class="bar">
-								<div class="progress percent-70"></div>
-							</div>
-					</div>
-					<div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
-						Illustrator
-						<div class="bar">
-							<div class="progress percent-60"></div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
-						Photoshop
-						<div class="bar">
-							<div class="progress percent-50"></div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
-						Adobe XD
-						<div class="bar">
-							<div class="progress percent-60"></div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
-						CSS
-						<div class="bar">
-							<div class="progress percent-70"></div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
-						SASS
-						<div class="bar">
-							<div class="progress percent-40"></div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
-						Bootstrap
-						<div class="bar">
-							<div class="progress percent-60"></div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
-						HTML
-						<div class="bar">
-							<div class="progress percent-50"></div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
-						javascript
-						<div class="bar">
-							<div class="progress percent-80"></div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-6 col-xl-3 fs-2 my-2">
-						.Net
-						<div class="bar">
-							<div class="progress percent-70"></div>
-						</div>
-					</div>
-				</article>
-				<!--end contenido tab skills -->
-			</div>
-			<div class="tab-pane fade" id="experiences" role="tabpanel" aria-labelledby="experiences-tab">
-				<!--contenido tab experiencia --> 
-				<article >
-					
-					<div class="card my-2 experience">
-						<div class="card-header d-lg-flex flex-column" data-bs-toggle="collapse" href="#expWigou" role="button" aria-expanded="false" aria-controls="expWigou">
-							<h1 class="d-flex justify-content-between">Wigou  <small class="fw-light">01/2021-01/2022</small></h1>
-							<div class="d-flex align-items-center flex-wrap" >
-								<h3 class="mx-2">FullStack Developer </h3>
-								<h4 class="mx-2">Gosu - AngularJs</h4>
-							</div>
-						</div>
-						<div class="card-body collapse" id="expWigou">
-							<h4 class="mb-2">Proyecto: NetVos - La Segunda</h4>
-							<h5>Software y lenguajes utilizados</h5>
-							<ul class="list-group mb-2">
-								<li class="list-group-item">AngularJS</li>
-								<li class="list-group-item">SASS</li>
-								<li class="list-group-item">Gosu</li>
-								<li class="list-group-item">Guidewire</li>
-								<li class="list-group-item">Postman</li>
-								<li class="list-group-item">Bitbucket</li>
-								<li class="list-group-item">Jira</li>
-							</ul>
-							<h5>Tareas realizadas</h5>
-							<ul class="list-group">
-								<li class="list-group-item">Diseño e implementación de interfaces responsivas</li>
-								<li class="list-group-item">Creación y mantenimiento de APIs</li>
-								<li class="list-group-item">Creación y mantenimiento de documentación</li>
-								<li class="list-group-item">Participación activa en la metodologia de trabajo Agil (scrum)</li>
-							</ul>
-						</div>
-					</div>
-					<div class="card my-2 experience">
-						<div class="card-header d-lg-flex flex-column" data-bs-toggle="collapse" href="#expTecso" role="button" aria-expanded="false" aria-controls="expTecso">
-							<h1 class="d-flex justify-content-between">Tecso  <small class="fw-light">11/2018-12/2020</small></h1>
-							<div class="d-flex align-items-center flex-wrap" >
-								<h3 class="mx-2">FullStack Developer </h3>
-								<h4 class="mx-2">.Net Core - Angular</h4>
-							</div>
-						</div>
-						<div class="card-body collapse" id="expTecso">
-							<h4 class="mb-2">Proyectos: Binaria, Flexity, InvestrosTrust, FullControl, INTA</h4>
-							<h5>Software y lenguajes utilizados</h5>
-							<ul class="list-group mb-2">
-								<li class="list-group-item">.netCore</li>
-								<li class="list-group-item">Javascript (Angular, React, Ionic, Jquery)</li>
-								<li class="list-group-item">CSS & SASS</li>
-								<li class="list-group-item">Visual Studio, Visual Studio Code</li>
-								<li class="list-group-item">Jira</li>
-								<li class="list-group-item">Git</li>
-							</ul>
-							<h5>Tareas realizadas</h5>
-							<ul class="list-group">
-								<li class="list-group-item">Diseño e implementación de interfaces responsivas</li>
-								<li class="list-group-item">Creación y mantenimiento de APIs</li>
-								<li class="list-group-item">Creación y mantenimiento de documentación</li>
-								<li class="list-group-item">Participación simultanea en multiples proyectos</li>
-								<li class="list-group-item">Mantenimineto de bases de datos en multiples ambientes</li>
-								<li class="list-group-item">Participación activa en la metodologia de trabajo Agil (scrum)</li>
-								<li class="list-group-item">Participación en todas las etapas del proyecto, desde el analisis hasta la subida a producción</li>
-
-							</ul>
-						</div>
-					</div>
-					<div class="card my-2 experience">
-						<div class="card-header d-lg-flex flex-column" data-bs-toggle="collapse" href="#expNeoris" role="button" aria-expanded="false" aria-controls="expNeoris">
-							<h1 class="d-flex justify-content-between">Neoris  <small class="fw-light">06/2017-10/2018</small></h1>
-							<div class="d-flex align-items-center flex-wrap" >
-								<h3 class="mx-2">FullStack Developer </h3>
-								<h4 class="mx-2">.Net - AngularJs</h4>
-							</div>
-						</div>
-						<div class="card-body collapse" id="expNeoris">
-							<h4 class="mb-2">Proyecto: Mi cuenta - Telecom</h4>
-							<h5>Software y lenguajes utilizados</h5>
-							<ul class="list-group mb-2">
-								<li class="list-group-item">AngularJs</li>
-								<li class="list-group-item">CSS</li>
-								<li class="list-group-item">Jquery</li>
-								<li class="list-group-item">.Net 6.0</li>
-								<li class="list-group-item">Postman</li>
-								<li class="list-group-item">Jira</li>
-								<li class="list-group-item">SQL</li>
-							</ul>
-							<h5>Tareas realizadas</h5>
-							<ul class="list-group">
-								<li class="list-group-item">Diseño e implementación de interfaces responsivas</li>
-								<li class="list-group-item">Creación y mantenimiento de APIs</li>
-								<li class="list-group-item">Mantenimineto de bases de datos en multiples ambientes</li>
-								<li class="list-group-item">Participacion activa en la metodologia de trabajo Agil (scrum)</li>
-							</ul>
-						</div>
-					</div>
-					
-				</article>
-				<!--end contenido tab experiencia -->
-			</div>
-			<div class="tab-pane fade" id="studies" role="tabpanel" aria-labelledby="studies-tab">
-				<!--contenido tab educacion -->
-				<article class="studies">
-					<div class="study card my-3 mx-2">
-						<h2 class="card-header">UX/UI Avanzado </h2>
-						<div class="card-body">
-							<h3>Coderhouse <small>12/2021 3/2022</small></h3>
-							<a class="link-info card-link" target="blank" href="https://www.coderhouse.com/certificados/622f743f76d985003c8a3f48">Ver certificado</a>
-							<a class="link-info card-link" target="blank" href="https://drive.google.com/file/d/162b0ko4huPFJQJKtFDtK4vgknSxKJJK2/view">Ver plan de estudio</a>
-						</div>
-					</div>
-					<div class="study card  my-3 mx-2">
-						<h2 class="card-header">UX/UI</h2>
-						<div class="card-body">
-							<h3>Coderhouse <small>07/2021 10/2021</small></h3> 
-							<a class="link-info card-link" target="blank" href="https://www.coderhouse.com/certificados/622f743f76d985003c8a3f48">Ver certificado</a>
-							<a class="link-info card-link" target="blank" href="https://drive.google.com/file/d/162b0ko4huPFJQJKtFDtK4vgknSxKJJK2/view">Ver plan de estudio</a>
-						</div>
-					</div>
-					<div class="study card  my-3 mx-2">
-						<h2 class="card-header">Photoshop & Illustrator</h2>
-						<div class="card-body">
-							<h3>Coderhouse <small>05/2021 07/2021</small></h3> 
-							<a class="link-info card-link" target="blank" href="https://www.coderhouse.com/certificados/622f743f76d985003c8a3f48">Ver certificado</a>
-							<a class="link-info card-link" target="blank" href="https://drive.google.com/file/d/162b0ko4huPFJQJKtFDtK4vgknSxKJJK2/view">Ver plan de estudio</a>
-						</div>
-					</div>
-					<div class="study card  my-3 mx-2">
-						<h2 class="card-header">ReactJS</h2>
-						<div class="card-body">
-							<h3>Linkedin Learning <small>11/2020</small></h3> 
-						</div>
-					</div>
-					<div class="study card  my-3 mx-2">
-						<h2 class="card-header">User Experience for web design</h2>
-						<div class="card-body">
-							<h3>Linkedin Learning <small>10/2020</small></h3> 
-						</div>
-					</div>
-					<div class="study card  my-3 mx-2">
-						<h2 class="card-header">CSS essential training</h2>
-						<div class="card-body">
-							<h3>Linkedin Learning <small>10/2020</small></h3> 
-						</div>
-					</div>
-					<div class="study card  my-3 mx-2">
-						<h2 class="card-header">Taller UX para todos</h2>
-						<div class="card-body">
-							<h3>La Maquinita <small>10/2019</small></h3> 
-						</div>
-					</div>
-					<div class="study card  my-3 mx-2">
-						<h2 class="card-header">Tecnicatura superior en programación</h2>
-						<div class="card-body">
-							<h3>UTN FRSN <small>2013 - 2016</small></h3> 
-						</div>
-					</div>
-					
-				</article>
-				<!--end contenido tab educacion -->
-			</div>
-		</div>
-	
-	</section>
-	<footer class="px-4 py-3 container-fluid">
-        <div class="row">
-            <div class="col d-flex flex-column flex-lg-row align-items-center">
-                <h5 class="me-2">Seguí mi trabajo</h5>
-                <a class="text-center mx-2" href="https://www.linkedin.com/in/julia-soria-568454110"><i class="fa-brands fa-linkedin fa-lg me-1"></i>Linkedin</a>
-                <a class="text-center mx-2" href="https://www.behance.net/julisoria"><i class="fa-brands fa-behance fa-lg me-1"></i>Behance</a>
-                <a class="text-center mx-2" href="https://github.com/SoriaJulia"><i class="fa-brands fa-github fa-lg me-1"></i>Github</a>
+            <div class="card my-2 experience">
+              <div
+                class="card-header d-lg-flex flex-column"
+                data-bs-toggle="collapse"
+                href="#expTecso"
+                role="button"
+                aria-expanded="false"
+                aria-controls="expTecso"
+              >
+                <h1 class="d-flex justify-content-between">Tecso <small class="fw-light">11/2018-12/2020</small></h1>
+                <div class="d-flex justify-content-between align-items-end">
+                  <div class="d-flex align-items-center flex-wrap">
+                    <h3 class="mx-2">FullStack Developer</h3>
+                    <h4 class="mx-2">.Net Core - Angular</h4>
+                  </div>
+                  <i class="fa-solid fa-chevron-down opacity-75"></i>
+                </div>
+              </div>
+              <div class="card-body collapse" id="expTecso">
+                <h4 class="mb-2">Proyectos: Binaria, Flexity, InvestrosTrust, FullControl, INTA</h4>
+                <h5>Software y lenguajes utilizados</h5>
+                <ul class="list-group mb-2">
+                  <li class="list-group-item">.netCore</li>
+                  <li class="list-group-item">Javascript (Angular, React, Ionic, Jquery)</li>
+                  <li class="list-group-item">CSS & SASS</li>
+                  <li class="list-group-item">Visual Studio, Visual Studio Code</li>
+                  <li class="list-group-item">Jira</li>
+                  <li class="list-group-item">Git</li>
+                </ul>
+                <h5>Tareas realizadas</h5>
+                <ul class="list-group">
+                  <li class="list-group-item">Diseño e implementación de interfaces responsivas</li>
+                  <li class="list-group-item">Creación y mantenimiento de APIs</li>
+                  <li class="list-group-item">Creación y mantenimiento de documentación</li>
+                  <li class="list-group-item">Participación simultanea en multiples proyectos</li>
+                  <li class="list-group-item">Mantenimineto de bases de datos en multiples ambientes</li>
+                  <li class="list-group-item">Participación activa en la metodologia de trabajo Agil (scrum)</li>
+                  <li class="list-group-item">Participación en todas las etapas del proyecto, desde el analisis hasta la subida a producción</li>
+                </ul>
+              </div>
             </div>
-            <div class="col d-flex flex-column flex-lg-row align-items-center justify-content-end ">
-                <h5 class="me-2">¡Hablemos!</h5>
-                <a class="text-center mx-2" href="mailto:soriajulias@gmail.com"><i class="fa-solid fa-envelope fa-lg me-1"></i>Email</a>
-                <a class="text-center mx-2" href="https://wa.me/+543364652500"><i class="fa-brands fa-whatsapp fa-lg me-1"></i>WhatsApp</a>
-                <a class="text-center mx-2" href="https://t.me/SoriaJulia"><i class="fa-brands fa-telegram fa-lg me-1"></i>Telegram</a>
+            <div class="card my-2 experience">
+              <div
+                class="card-header d-lg-flex flex-column"
+                data-bs-toggle="collapse"
+                href="#expNeoris"
+                role="button"
+                aria-expanded="false"
+                aria-controls="expNeoris"
+              >
+                <h1 class="d-flex justify-content-between">Neoris <small class="fw-light">06/2017-10/2018</small></h1>
+                <div class="d-flex justify-content-between align-items-end">
+                  <div class="d-flex align-items-center flex-wrap">
+                    <h3 class="mx-2">FullStack Developer</h3>
+                    <h4 class="mx-2">.Net - AngularJs</h4>
+                  </div>
+                  <i class="fa-solid fa-chevron-down opacity-75"></i>
+                </div>
+              </div>
+              <div class="card-body collapse" id="expNeoris">
+                <h4 class="mb-2">Proyecto: Mi cuenta - Telecom</h4>
+                <h5>Software y lenguajes utilizados</h5>
+                <ul class="list-group mb-2">
+                  <li class="list-group-item">AngularJs</li>
+                  <li class="list-group-item">CSS</li>
+                  <li class="list-group-item">Jquery</li>
+                  <li class="list-group-item">.Net 6.0</li>
+                  <li class="list-group-item">Postman</li>
+                  <li class="list-group-item">Jira</li>
+                  <li class="list-group-item">SQL</li>
+                </ul>
+                <h5>Tareas realizadas</h5>
+                <ul class="list-group">
+                  <li class="list-group-item">Diseño e implementación de interfaces responsivas</li>
+                  <li class="list-group-item">Creación y mantenimiento de APIs</li>
+                  <li class="list-group-item">Mantenimineto de bases de datos en multiples ambientes</li>
+                  <li class="list-group-item">Participacion activa en la metodologia de trabajo Agil (scrum)</li>
+                </ul>
+              </div>
             </div>
+          </article>
+          <!--end contenido tab experiencia -->
         </div>
-	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+        <div class="tab-pane fade" id="studies" role="tabpanel" aria-labelledby="studies-tab">
+          <!--contenido tab educacion -->
+          <article class="studies">
+            <div class="study card my-3 mx-2">
+              <h2 class="card-header">UX/UI Avanzado</h2>
+              <div class="card-body">
+                <p>Coderhouse <small>12/2021 3/2022</small></p>
+                <a class="cardLinkSecondary card-link" target="blank" href="https://www.coderhouse.com/certificados/622f743f76d985003c8a3f48"
+                  >Ver certificado</a
+                >
+                <a class="cardLinkSecondary card-link" target="blank" href="https://drive.google.com/file/d/162b0ko4huPFJQJKtFDtK4vgknSxKJJK2/view"
+                  >Ver plan de estudio</a
+                >
+              </div>
+            </div>
+            <div class="study card my-3 mx-2">
+              <h2 class="card-header">UX/UI</h2>
+              <div class="card-body">
+                <p>Coderhouse <small>07/2021 10/2021</small></p>
+                <a class="cardLinkSecondary card-link" target="blank" href="https://www.coderhouse.com/certificados/622f743f76d985003c8a3f48"
+                  >Ver certificado</a
+                >
+                <a class="cardLinkSecondary card-link" target="blank" href="https://drive.google.com/file/d/162b0ko4huPFJQJKtFDtK4vgknSxKJJK2/view"
+                  >Ver plan de estudio</a
+                >
+              </div>
+            </div>
+            <div class="study card my-3 mx-2">
+              <h2 class="card-header">Photoshop & Illustrator</h2>
+              <div class="card-body">
+                <p>Coderhouse <small>05/2021 07/2021</small></p>
+                <a class="cardLinkSecondary card-link" target="blank" href="https://www.coderhouse.com/certificados/622f743f76d985003c8a3f48"
+                  >Ver certificado</a
+                >
+                <a class="cardLinkSecondary card-link" target="blank" href="https://drive.google.com/file/d/162b0ko4huPFJQJKtFDtK4vgknSxKJJK2/view"
+                  >Ver plan de estudio</a
+                >
+              </div>
+            </div>
+            <div class="study card my-3 mx-2">
+              <h2 class="card-header">ReactJS</h2>
+              <div class="card-body">
+                <p>Linkedin Learning <small>11/2020</small></p>
+              </div>
+            </div>
+            <div class="study card my-3 mx-2">
+              <h2 class="card-header">User Experience for web design</h2>
+              <div class="card-body">
+                <p>Linkedin Learning <small>10/2020</small></p>
+              </div>
+            </div>
+            <div class="study card my-3 mx-2">
+              <h2 class="card-header">CSS essential training</h2>
+              <div class="card-body">
+                <p>Linkedin Learning <small>10/2020</small></p>
+              </div>
+            </div>
+            <div class="study card my-3 mx-2">
+              <h2 class="card-header">Taller UX para todos</h2>
+              <div class="card-body">
+                <p>La Maquinita <small>10/2019</small></p>
+              </div>
+            </div>
+            <div class="study card my-3 mx-2">
+              <h2 class="card-header">Tecnicatura superior en programación</h2>
+              <div class="card-body">
+                <p>UTN FRSN <small>2013 - 2016</small></p>
+              </div>
+            </div>
+          </article>
+          <!--end contenido tab educacion -->
+        </div>
+      </div>
+    </section>
+    <footer class="px-4 py-3 container-fluid">
+      <div class="row">
+        <div class="col d-flex flex-column flex-lg-row align-items-center">
+          <h5 class="me-2">Seguí mi trabajo</h5>
+          <a class="text-center mx-2" href="https://www.linkedin.com/in/julia-soria-568454110"><i class="fa-brands fa-linkedin fa-lg me-1"></i>Linkedin</a>
+          <a class="text-center mx-2" href="https://www.behance.net/julisoria"><i class="fa-brands fa-behance fa-lg me-1"></i>Behance</a>
+          <a class="text-center mx-2" href="https://github.com/SoriaJulia"><i class="fa-brands fa-github fa-lg me-1"></i>Github</a>
+        </div>
+        <div class="col d-flex flex-column flex-lg-row align-items-center justify-content-end">
+          <h5 class="me-2">¡Hablemos!</h5>
+          <a class="text-center mx-2" href="mailto:soriajulias@gmail.com"><i class="fa-solid fa-envelope fa-lg me-1"></i>Email</a>
+          <a class="text-center mx-2" href="https://wa.me/+543364652500"><i class="fa-brands fa-whatsapp fa-lg me-1"></i>WhatsApp</a>
+          <a class="text-center mx-2" href="https://t.me/SoriaJulia"><i class="fa-brands fa-telegram fa-lg me-1"></i>Telegram</a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
